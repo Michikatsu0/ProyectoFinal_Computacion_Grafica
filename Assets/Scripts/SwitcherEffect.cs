@@ -2,38 +2,55 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.UI;
 public class SwitcherEffect : MonoBehaviour
 {
+    public static SwitcherEffect Instance;
+    [SerializeField] private List<GameObject> panelEffects = new List<GameObject>();
     [SerializeField] private List<BaseShaderController> shaderMaterialHandler = new List<BaseShaderController>();
-    private BaseShaderController previousShaderMaterial = null;
-    [SerializeField] private BaseShaderController currentShaderMaterial; 
-    private int selectedShaderEffect;
+    [SerializeField] private Slider slider;
+    [SerializeField] public Color colorEffect;
 
+    [SerializeField] private BaseShaderController currentShaderMaterial;
+    private BaseShaderController previousShaderMaterial = null;
+
+    private int selectedShaderEffect;
     private List<float> floatBuffer;
     private List<Color> colorBuffer;
     private List<Vector3> vector3Buffer;
 
     private void Start()
     {
+        Instance = this;
         currentShaderMaterial = shaderMaterialHandler[0];
     }
     void Update()
     {
         SelectEffect();
+        colorEffect = Color.HSVToRGB(slider.value / slider.maxValue, 1, 1);
     }
 
     void SelectEffect()
     {
-        int i = 0;
+        int f = 0;
         foreach (Transform effect in transform)
         {
-            if (i == selectedShaderEffect)
+            if (f == selectedShaderEffect)
                 effect.gameObject.SetActive(true);
             else
                 effect.gameObject.SetActive(false);
-            i++;
+            f++;
         }
+        int p = 0;
+        foreach (GameObject effect in panelEffects)
+        {
+            if (p == selectedShaderEffect)
+                effect.SetActive(true);
+            else
+                effect.SetActive(false);
+            p++;
+        }
+
     }
 
     #region Switch Shader
@@ -60,14 +77,4 @@ public class SwitcherEffect : MonoBehaviour
 
     #endregion
 
-    void ChargeVariables()
-    {
-        
-    }
-
-    void UnSubscribe()
-    {
-        //CurrentShaderMaterial?.Invoke(currentShaderMaterial.shaderMaterial);
-
-    }
 }

@@ -2,12 +2,10 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public abstract class BaseShaderController : MonoBehaviour
 {
-    public static Action<Material> CurrentShaderMaterial;
-
     [SerializeField] public Material shaderMaterial;
-
-    public abstract void SetShaderInformation(Material shaderMaterial);
+    [SerializeField] public List<InputField> uIVariables;
 }
