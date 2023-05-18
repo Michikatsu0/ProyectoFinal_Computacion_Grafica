@@ -1,11 +1,10 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Effect_3 : BaseShaderController
+public class SwitchPanel : MonoBehaviour
 {
-    // SwitcherEffect.Instance.colorEffect; para acceder al color del slider
+    // Start is called before the first frame update
     void Start()
     {
         
@@ -14,11 +13,6 @@ public class Effect_3 : BaseShaderController
     // Update is called once per frame
     void Update()
     {
-
-    }
-
-    public void SetVariables()
-    {
-
+        
     }
 }

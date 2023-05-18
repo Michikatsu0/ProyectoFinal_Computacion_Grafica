@@ -1,15 +1,11 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class Effect_2 : BaseShaderController
 {
-    public override void SetShaderInformation(Material shaderMaterial)
-    {
-        this.shaderMaterial = shaderMaterial;
-    }
-
-    // Start is called before the first frame update
+    // SwitcherEffect.Instance.colorEffect; para acceder al color del slider
     void Start()
     {
         
@@ -19,5 +15,10 @@ public class Effect_2 : BaseShaderController
     void Update()
     {
         
+    }
+
+    public void SetVariables()
+    {
+
     }
 }
