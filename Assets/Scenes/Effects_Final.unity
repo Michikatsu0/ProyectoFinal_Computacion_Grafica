@@ -1292,10 +1292,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 19720428}
     m_Modifications:
-    - target: {fileID: 775478100427728097, guid: ea14ed9279f73fc4e983f351a65e8581, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 2879234216780891857, guid: ea14ed9279f73fc4e983f351a65e8581, type: 3}
       propertyPath: m_Pivot.x
       value: 1
@@ -1428,7 +1424,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1455600566603373440, guid: 56d8447205ff4a847911be3294ba82e5, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 110
+      value: 144.8
       objectReference: {fileID: 0}
     - target: {fileID: 1455600566603373440, guid: 56d8447205ff4a847911be3294ba82e5, type: 3}
       propertyPath: m_SizeDelta.y
@@ -1464,7 +1460,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1455600566603373440, guid: 56d8447205ff4a847911be3294ba82e5, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 60
+      value: 78.7
       objectReference: {fileID: 0}
     - target: {fileID: 1455600566603373440, guid: 56d8447205ff4a847911be3294ba82e5, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -1502,6 +1498,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: Previous_Button
       objectReference: {fileID: 0}
+    - target: {fileID: 1455600567331591364, guid: 56d8447205ff4a847911be3294ba82e5, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1455600567331591365, guid: 56d8447205ff4a847911be3294ba82e5, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
+    - target: {fileID: 1455600567331591365, guid: 56d8447205ff4a847911be3294ba82e5, type: 3}
+      propertyPath: m_fontStyle
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1455600567331591365, guid: 56d8447205ff4a847911be3294ba82e5, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 2140032, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 56d8447205ff4a847911be3294ba82e5, type: 3}
 --- !u!1001 &7873847095820341616
@@ -1511,6 +1523,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 19720428}
     m_Modifications:
+    - target: {fileID: 7873847095455181419, guid: 4e56bfad6095ae54fb7b134b0404fa5a, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -1.0000206
+      objectReference: {fileID: 0}
+    - target: {fileID: 7873847095455181420, guid: 4e56bfad6095ae54fb7b134b0404fa5a, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
+    - target: {fileID: 7873847095455181420, guid: 4e56bfad6095ae54fb7b134b0404fa5a, type: 3}
+      propertyPath: m_fontStyle
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7873847095455181420, guid: 4e56bfad6095ae54fb7b134b0404fa5a, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 2140032, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
     - target: {fileID: 7873847095577377651, guid: 4e56bfad6095ae54fb7b134b0404fa5a, type: 3}
       propertyPath: m_Name
       value: Next_Button
