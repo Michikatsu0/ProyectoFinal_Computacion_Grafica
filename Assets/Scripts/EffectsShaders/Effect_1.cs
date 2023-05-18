@@ -15,11 +15,6 @@ public class Effect_1 : BaseShaderController
 
     void Update()
     {
-        
-    }
-
-    public void SetVariables()
-    {
 
     }
 }
