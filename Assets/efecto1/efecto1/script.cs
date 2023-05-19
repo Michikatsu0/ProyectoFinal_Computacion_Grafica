@@ -1,9 +1,8 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Effect_1 : BaseShaderController
+public class script : MonoBehaviour
 {
     public ParticleSystem pSiteamMain;
     public ParticleSystem pSiteamSphere;
@@ -43,12 +42,5 @@ public class Effect_1 : BaseShaderController
         
         
     }
-
-    public void SetVariables()
-    {
-        //sizeMltiplier;
-        //colorControler;
-    }
-
-    
+  
 }
