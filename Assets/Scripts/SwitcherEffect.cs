@@ -8,8 +8,8 @@ public class SwitcherEffect : MonoBehaviour
     public static SwitcherEffect Instance;
     [SerializeField] private List<GameObject> panelEffects = new List<GameObject>();
     [SerializeField] private List<BaseShaderController> shaderMaterialHandler = new List<BaseShaderController>();
-    [SerializeField] private Slider slider;
-    [SerializeField] public Color colorEffect;
+    [SerializeField] private List<Slider> slider;
+    [SerializeField] public Color colorEffect1, colorEffect2;
 
     [SerializeField] private BaseShaderController currentShaderMaterial;
     private BaseShaderController previousShaderMaterial = null;
@@ -27,7 +27,8 @@ public class SwitcherEffect : MonoBehaviour
     void Update()
     {
         SelectEffect();
-        colorEffect = Color.HSVToRGB(slider.value / slider.maxValue, 1, 1);
+        colorEffect1 = Color.HSVToRGB(slider[0].value / slider[0].maxValue, 1, 1);
+        colorEffect2 = Color.HSVToRGB(slider[1].value / slider[1].maxValue, 1, 1);
     }
 
     void SelectEffect()
