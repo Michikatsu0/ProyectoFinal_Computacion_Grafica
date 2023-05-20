@@ -44,6 +44,11 @@ public class Effect_1 : BaseShaderController
         
         
     }
+    public void SetVariables()
+    {
+        sizeMltiplier;
+        colorControler;
+    }
 }
 
   
