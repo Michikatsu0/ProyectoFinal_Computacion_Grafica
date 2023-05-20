@@ -1,12 +1,10 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Effect_1 : BaseShaderController
+public class script : MonoBehaviour
 {
-    // SwitcherEffect.Instance.colorEffect; para acceder al color del slider
- public ParticleSystem pSiteamMain;
+    public ParticleSystem pSiteamMain;
     public ParticleSystem pSiteamSphere;
     public ParticleSystem pSiteamLigth;
     public ParticleSystem pSiteamInv;
@@ -44,6 +42,5 @@ public class Effect_1 : BaseShaderController
         
         
     }
-}
-
   
+}
