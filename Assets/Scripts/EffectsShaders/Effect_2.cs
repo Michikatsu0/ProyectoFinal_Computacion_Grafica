@@ -17,8 +17,4 @@ public class Effect_2 : BaseShaderController
         
     }
 
-    public void SetVariables()
-    {
-
-    }
 }

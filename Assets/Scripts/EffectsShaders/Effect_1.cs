@@ -12,11 +12,11 @@ public class Effect_1 : BaseShaderController
     //variable que controla en color
     public Color colorControler;
     //Variable que controla el tamaño del pato
-    public float sizeMltiplier; 
- 
+    public float sizeMltiplier;
+
     void Start()
     {
-        
+
         pSiteamMain = GameObject.Find("spiral").GetComponent<ParticleSystem>();
 
         pSiteamSphere = GameObject.Find("sphere").GetComponent<ParticleSystem>();
@@ -40,8 +40,8 @@ public class Effect_1 : BaseShaderController
 
         var sizeInv = pSiteamInv.main;
         sizeInv.startSize =  sizeMltiplier;
-        
-        
+
+
     }
 
     public void SetVariables()
@@ -50,5 +50,5 @@ public class Effect_1 : BaseShaderController
         //colorControler;
     }
 
-    
+
 }
